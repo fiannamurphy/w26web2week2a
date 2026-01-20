@@ -1,0 +1,38 @@
+body {
+    background-color: cornflowerblue;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: lightcyan;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* for the navigation */
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0; 
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: "Rubik Storm"'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+@media screen and (min-width: 700px) {
+    .main {
+        /* make the element inside of main sit next to each other */
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    ul {
+        display: block;
+        padding-left: 2em;
+    }
+}
